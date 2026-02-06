@@ -56,9 +56,44 @@ body {
   margin: 0;
 }
 
-#teamList li {
-  padding: 0.4rem 0;
+.team-member {
+  padding: 0.4rem 0.4rem;
+  margin-bottom: 0.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #94a3b8;
+}
+
+.team-member:hover {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.team-member.active {
+  background: #1e293b;
+  color: #e5e7eb;
+}
+
+/* Status Dot */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background: #22c55e;
+}
+
+.status-idle {
+  background: #eab308;
+}
+
+.status-offline {
+  background: #64748b;
 }
 
 /* Workspace */
